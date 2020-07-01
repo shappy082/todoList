@@ -10,16 +10,13 @@
     <div id="myDIV" class="header">
       <h2>My To Do List</h2>
       <input type="text" id="myInput" placeholder="รายการ..." />
-      <span onclick="newElement()" class="addBtn">Add</span>
+      <span onclick="newElement()" class="addBtn">เพิ่ม</span>
     </div>
 
     <ul id="myUL">
-      <li>Hit the gym</li>
-      <li class="checked">Pay bills</li>
-      <li>Meet George</li>
-      <li>Buy eggs</li>
-      <li>Read a book</li>
-      <li>Organize office</li>
+      <li>ซื้อน้ำ</li>
+      <li>ซื้อข้าว</li>
+      <li>ซื้อไข่</li>
     </ul>
   </body>
   
@@ -64,7 +61,7 @@
       var t = document.createTextNode(inputValue);
       li.appendChild(t);
       if (inputValue === "") {
-        alert("You must write something!");
+        alert("โปรดระบุ");
       } else {
         document.getElementById("myUL").appendChild(li);
       }
